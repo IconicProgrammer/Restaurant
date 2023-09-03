@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0px; 
+	padding: 0;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition:all .2s linear;
+}
+
+.png{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 6px;
+	left:40px;
+}
+
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+header{
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	padding: 1rem 7%;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	z-index: 1000;
+	background-color:gray;
+}
+ 
+header .logo{
+	color: black;
+	font-size: 3.5rem;
+	font-weight: bolder;
+}
+
+header .logo i{
+	color:green;
+}
+
+.navbar a{
+	font-size: 2.4rem;
+	border-radius: .5rem;
+	padding:1rem;
+	color:black;
+	float: left;
+	width: 100px;
+	text-align: center;
+}
+
+header .navbar a:hover{
+	color: #fff;
+	background:green;
+}
+
+header .icons i,
+header .icons a{
+	cursor: pointer;
+	margin-left: .5rem;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	width: 4.5rem;
+	text-align: center;
+	font-size: 1.7rem;
+	color: black;
+	border-radius: 50%;
+	background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+	color: #fff;
+	background: green;
+	transform: rotate(360deg);
+
+}
+
+header .icons #bar{
+	display:none;
+}
+
+@media(max-width:991px){
+	html{
+		font-size: 55%;
+	}
+
+	header{
+		padding: 1rem 2rem;
+	}
+}
+
+@media(max-width:768px){
+	header .icons #bar{
+		display: inline-block;
+	}
+
+	header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #fff;
+		border-top:.1rem solid rgba(0,0,0,.2);
+		padding: 1rem;
+
+	}
+
+	header .navbar a{
+		display:block;
+		padding: 1.5rem;
+		margin: 1rem;
+		font-size: 2rem;
+		background: #fff;
+	}
+}
+
+section{
+	padding: 2rem 9%;
+}
+section:nth-child(even){
+	background: #eee;
+}
+
+.btn{
+	margin-top: 1rem;
+	display: inline-block;
+	font-size: 1.7rem;
+	color: #fff;
+	background: black;
+	border-radius: 5rem;
+	padding:1rem;
+	text-align: center;
+}
+
+.btn:hover{
+	background: red;
+	letter-spacing: .1rem;
+}
+
+
+.heading{
+	text-align: center;
+	color: green;
+	font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+section{
+	font-size:17px;
+}
+
+.box span{
+	font-size:20px;
+	display: inline-block;
+}
+
+
+.dishes .container{
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+	gap:10rem;
+}
+
+.box img{
+	width: 340px;
+	height: 240px;
+}
+
+.box img{
+	padding: 1rem;
+	background: #fff;
+	border-radius:.5rem;
+	border: 1rem solid rgba(0, 0, 0, .2);
+	box-shadow: var(--box-shadow);
+	position: relative;
+	overflow: hidden;
+	text-align: center;	
+}
+
+.box img:hover{
+	transform:scale(1.04,1.04);
+}
+
+.dishes .container .box .fa-heart{
+	position: absolute;
+	top: 1.5rem;
+	background: #eee;
+	border-radius: 50%;
+	height: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	color: black;
+}
+
+.img{
+	width: 42vw;
+/*	margin-left: 140px;*/
+}
+
+.img img{
+	width: 100%;
+	padding-left:3rem ;
+}
+
+
+.content h3{
+	color: red;
+	font-style: italic;
+	font-size: 4rem;
+	padding-bottom: 2rem;
+	text-shadow:0 0 10px black,0 0 20px black;
+}
+
+.content h2{
+	color: #851483;
+	text-shadow:0 0 6px black,0 0 10px black;
+	font-size: 3rem;
+	padding-bottom:1.3rem;
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.stars .fa-star,
+.stars .fa-star-half-alt{
+	color:blue;
+}
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+.swiper-slide {
+	  font-size: 18px;
+	  background: #146d96;
+	  display: flex;
+	  top: 80px;
+}
+
+.swiper-slide img {
+/*  display: block;*/
+  width: 100%;
+  height: auto;
+/*  object-fit: cover;*/
+}
+
+.slide{
+	display: flex;
+	flex-direction: row;
+	height: 85vh;
+	justify-content: space-around;
+	margin-right: 30px;
+}
+
+.fruit img{
+	width:33vw;
+}
+
+.back::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.back{
+	height:77vh;
+	width: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.order table{
+	margin-top: 20vh;
+	margin-left: 50vh;
+	align-items: center;
+	align-content: center;
+}
+.order{
+	font-size: 30px;
+}
+.order input{
+	width: 200px;
+	height: 30px;
+}
